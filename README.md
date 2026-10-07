@@ -29,26 +29,43 @@
 
 The idea: "a poster for my bakery's Saturday sourdough special, with the words Saturday Sourdough and Fresh at 8am." Here's what the skill writes for each tool. Both came from the skill in a fresh chat.
 
-**For Nano Banana in AI Studio**
+**For Nano Banana**
 
 ```
-Create a warm, inviting poster for a bakery's Saturday sourdough special. In the center, a golden sourdough loaf with a deeply caramelized, crackling crust and a clean diagonal score, resting on a rustic oak board dusted with flour. Behind it, a cream linen cloth and a soft focus bakery counter with warm morning sunlight coming through a window. Shot with a 50mm lens at f/2.8, golden hour side light, visible flour dust floating in the air. Leave a calm cream area at the top of the poster for the headline. At the top, the headline "Saturday Sourdough" in a bold, rounded serif typeface in deep brown. Below the loaf, in a smaller clean sans serif typeface in warm terracotta, the line "Fresh at 8am". Spell both lines exactly as written. The style is a polished, cozy artisan bakery poster with a warm cream, golden brown and terracotta palette. Make it a vertical 4:5 image.
+Create a warm, inviting poster for a bakery's Saturday sourdough special. In the center, a
+golden sourdough loaf with a deeply caramelized, crackling crust and a clean diagonal score,
+resting on a rustic oak board dusted with flour. Behind it, a cream linen cloth and a soft
+focus bakery counter with warm morning sunlight coming through a window. Shot with a 50mm
+lens at f/2.8, golden hour side light, visible flour dust floating in the air. Leave a calm
+cream area at the top of the poster for the headline. At the top, the headline "Saturday
+Sourdough" in a bold, rounded serif typeface in deep brown. Below the loaf, in a smaller
+clean sans serif typeface in warm terracotta, the line "Fresh at 8am". Spell both lines
+exactly as written. The style is a polished, cozy artisan bakery poster with a warm cream,
+golden brown and terracotta palette. Make it a vertical 4:5 image.
 ```
 
 **For ChatGPT Images**
 
 ```
-A vertical poster for a bakery's Saturday sourdough special, to hang in the shop window and post on social media. A real photograph of one freshly baked sourdough loaf, framed close and centered, with the poster text sitting in clean space above and below it.
+A vertical poster for a bakery's Saturday sourdough special, to hang in the shop window and
+post on social media. A real photograph of one freshly baked sourdough loaf, framed close
+and centered, with the poster text sitting in clean space above and below it.
 
-Scene: a rustic wooden bakery counter in warm morning light from the left, with a few flour dustings on the wood and a soft, blurred bakery shelf behind.
+Scene: a rustic wooden bakery counter in warm morning light from the left, with a few flour
+dustings on the wood and a soft, blurred bakery shelf behind.
 
-Subject: one golden brown round sourdough loaf with a deep crackled crust, a crisp scored ear on top and a light dusting of white flour.
+Subject: one golden brown round sourdough loaf with a deep crackled crust, a crisp scored
+ear on top and a light dusting of white flour.
 
-Text: the headline "Saturday Sourdough" in large cream white serif capitals across the top third, with the letters sharp and evenly spaced. The line "Fresh at 8am" in smaller warm brown serif lettering centered along the bottom, under the loaf.
+Text: the headline "Saturday Sourdough" in large cream white serif capitals across the top
+third, with the letters sharp and evenly spaced. The line "Fresh at 8am" in smaller warm
+brown serif lettering centered along the bottom, under the loaf.
 
-Details: warm honey and toasted brown colors, cream paper tones, plenty of empty space around the text so it reads from across the street.
+Details: warm honey and toasted brown colors, cream paper tones, plenty of empty space
+around the text so it reads from across the street.
 
-Limits: no extra text, no other words, no logos, no watermark, no price, no people, no extra loaves or props.
+Limits: no extra text, no other words, no logos, no watermark, no price, no people, no extra
+loaves or props.
 
 Make it a vertical 4:5 image.
 ```
@@ -61,6 +78,8 @@ Make it a vertical 4:5 image.
 | Look | Camera and light words: "50mm lens at f/2.8, golden hour side light" | "A real photograph", with plain words for light and materials |
 | What to avoid | Says what it wants instead: "a calm cream area at the top" | A Limits line: "no extra text, no logos, no watermark" |
 | Settings it tells you | Aspect ratio 4:5, resolution 2K, thinking level High, Search off | Thinking effort High, aspect ratio 4:5 if the option shows |
+
+The ChatGPT prompt runs about 40 words longer because its guide asks for labeled parts and a list of what to leave out. Length is not the point. Each prompt has the shape its tool asks for.
 
 These come from each lab's own guide. The links are at the bottom of [`references/gemini.md`](references/gemini.md) and [`references/chatgpt.md`](references/chatgpt.md).
 
@@ -87,12 +106,13 @@ Want only the styles? Skip the install. Open [`references/styles.md`](references
 Paste this:
 
 ```
-Write me an image prompt for a poster for my bakery's Saturday sourdough special. The words on it are "Saturday Sourdough" and "Fresh at 8am". Nano Banana in AI Studio, from scratch.
+Write me an image prompt for a poster for my bakery's Saturday sourdough special. The words
+on it are "Saturday Sourdough" and "Fresh at 8am". Nano Banana, from scratch.
 ```
 
 You get the Nano Banana prompt shown above, then:
 
-**Settings to pick**
+**Settings to pick** (the names are the ones in AI Studio, so if your Gemini screen differs, use the ones it shows)
 - Model: Nano Banana 2.1.
 - Output format: Images only.
 - Aspect ratio: 4:5.
