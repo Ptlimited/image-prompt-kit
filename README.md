@@ -33,7 +33,7 @@ Most image prompt advice is written once and used for any tool. These 2 models a
 
 **A) Claude Code.** Put the `image-prompt-kit` folder in `~/.claude/skills/`, so `SKILL.md` ends up at `~/.claude/skills/image-prompt-kit/SKILL.md`. Restart Claude Code, then ask "write me an image prompt for...".
 
-**B) The Claude app.** Open the Skills section in your Claude settings and upload `image-prompt-kit-skill.zip` from this page. Turn it on, then ask "write me an image prompt for...".
+**B) The Claude app.** Open the Skills section in your Claude settings and download [`image-prompt-kit-skill.zip`](https://github.com/Ptlimited/image-prompt-kit/releases/latest/download/image-prompt-kit-skill.zip) and upload it there. Turn it on, then ask "write me an image prompt for...".
 
 **C) No install.** Open any chat. Paste `SKILL.md`, then the file for your tool from `references/` (`gemini.md` or `chatgpt.md`). Add your idea. It asks its 2 questions and writes the prompt.
 
@@ -126,7 +126,6 @@ Open `SKILL.md` and add a line about how you work. Your usual output shape ("9:1
 | Path | What it is |
 |---|---|
 | `SKILL.md` | The prompt writer. This is the skill. |
-| `image-prompt-kit-skill.zip` | The same skill, zipped for the Claude app |
 | `references/gemini.md`, `references/chatgpt.md` | Each lab's advice, boiled down, with links to the source |
 | `references/styles.md` | The 10 prompts |
 | `references/fixes.md` | What to send when the image misses |
