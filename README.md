@@ -1,27 +1,70 @@
 <h1 align="center">Image Prompt Kit</h1>
 
 <p align="center">
-  <img src="assets/hero.jpg" width="900" alt="1 photo turned into a 70s portrait, a felted doll, a bobblehead, a newspaper front page and a marble statue">
-</p>
-
-<p align="center">
-  <b>1 photo. Any style. The skill that writes your image prompts for you.</b><br>
-  Google and OpenAI each publish their own advice for prompting their image model, and the advice differs. This kit follows each lab's guide, so your prompt fits the tool you paste it into.<br>
+  <b>Nano Banana and ChatGPT want prompts written differently. This skill writes the right one.</b><br>
+  Google and OpenAI each publish their own advice for prompting their image model, and the 2 sets of advice don't match. A prompt that suits 1 tool leaves quality on the table in the other.<br>
   <br>
-  Tell it your idea. It asks 2 quick questions, writes the prompt for Nano Banana 2.1 or ChatGPT Images, and tells you which settings to pick.<br>
+  Tell the skill your idea. It asks 2 quick questions, then writes the prompt for the tool you use, tells you which settings to pick, and gives you 2 lines to send if the image misses.<br>
   Works in Claude, ChatGPT, Gemini or any chat.
 </p>
 
 <p align="center">
+  <img src="assets/how-it-works.svg" width="820" alt="You type an idea, answer 2 quick questions, and get a prompt written for your tool, the settings to pick, and 2 lines to send if the image misses">
+</p>
+
+<p align="center">
+  <img src="assets/hero.jpg" width="900" alt="1 photo turned into a 70s portrait, a felted doll, a bobblehead, a newspaper front page and a marble statue">
+</p>
+
+<p align="center">
+  <a href="#same-idea-2-prompts">Same idea, 2 prompts</a> ·
   <a href="#how-to-use-it">How to use it</a> ·
   <a href="#the-5-styles">The 5 styles</a> ·
-  <a href="#same-prompt-both-models">Same prompt, both models</a> ·
   <a href="#whats-in-here">What's in here</a>
 </p>
 
 ---
 
-Most image prompt advice is written once and used for any tool. These 2 models are asked differently. Google's guide says to write full sentences and say what you want in positive form. OpenAI's guide says to lead with the result and spell out what to leave out. The skill knows both and writes the one you need.
+## Same idea, 2 prompts
+
+The idea: "a poster for my bakery's Saturday sourdough special, with the words Saturday Sourdough and Fresh at 8am." Here's what the skill writes for each tool. Both came from the skill in a fresh chat.
+
+**For Nano Banana in AI Studio**
+
+```
+Create a warm, inviting poster for a bakery's Saturday sourdough special. In the center, a golden sourdough loaf with a deeply caramelized, crackling crust and a clean diagonal score, resting on a rustic oak board dusted with flour. Behind it, a cream linen cloth and a soft focus bakery counter with warm morning sunlight coming through a window. Shot with a 50mm lens at f/2.8, golden hour side light, visible flour dust floating in the air. Leave a calm cream area at the top of the poster for the headline. At the top, the headline "Saturday Sourdough" in a bold, rounded serif typeface in deep brown. Below the loaf, in a smaller clean sans serif typeface in warm terracotta, the line "Fresh at 8am". Spell both lines exactly as written. The style is a polished, cozy artisan bakery poster with a warm cream, golden brown and terracotta palette. Make it a vertical 4:5 image.
+```
+
+**For ChatGPT Images**
+
+```
+A vertical poster for a bakery's Saturday sourdough special, to hang in the shop window and post on social media. A real photograph of one freshly baked sourdough loaf, framed close and centered, with the poster text sitting in clean space above and below it.
+
+Scene: a rustic wooden bakery counter in warm morning light from the left, with a few flour dustings on the wood and a soft, blurred bakery shelf behind.
+
+Subject: one golden brown round sourdough loaf with a deep crackled crust, a crisp scored ear on top and a light dusting of white flour.
+
+Text: the headline "Saturday Sourdough" in large cream white serif capitals across the top third, with the letters sharp and evenly spaced. The line "Fresh at 8am" in smaller warm brown serif lettering centered along the bottom, under the loaf.
+
+Details: warm honey and toasted brown colors, cream paper tones, plenty of empty space around the text so it reads from across the street.
+
+Limits: no extra text, no other words, no logos, no watermark, no price, no people, no extra loaves or props.
+
+Make it a vertical 4:5 image.
+```
+
+**What the skill changed between them**
+
+| | Nano Banana | ChatGPT Images |
+|---|---|---|
+| Shape | 1 paragraph of full sentences | The result first, then labeled lines: Scene, Subject, Text, Details, Limits |
+| Look | Camera and light words: "50mm lens at f/2.8, golden hour side light" | "A real photograph", with plain words for light and materials |
+| What to avoid | Says what it wants instead: "a calm cream area at the top" | A Limits line: "no extra text, no logos, no watermark" |
+| Settings it tells you | Aspect ratio 4:5, resolution 2K, thinking level High, Search off | Thinking effort High, aspect ratio 4:5 if the option shows |
+
+These come from each lab's own guide. The links are at the bottom of [`references/gemini.md`](references/gemini.md) and [`references/chatgpt.md`](references/chatgpt.md).
+
+**Why does this matter?** Google's guide says a list of keywords falls short and to say what you want in positive form. OpenAI's guide says to lead with the result and name what to leave out. Paste 1 tool's style into the other and you use the wrong half of the advice.
 
 ## How to use it
 
@@ -33,7 +76,7 @@ Most image prompt advice is written once and used for any tool. These 2 models a
 
 **A) Claude Code.** Put the `image-prompt-kit` folder in `~/.claude/skills/`, so `SKILL.md` ends up at `~/.claude/skills/image-prompt-kit/SKILL.md`. Restart Claude Code, then ask "write me an image prompt for...".
 
-**B) The Claude app.** Open the Skills section in your Claude settings and download [`image-prompt-kit-skill.zip`](https://github.com/Ptlimited/image-prompt-kit/releases/latest/download/image-prompt-kit-skill.zip) and upload it there. Turn it on, then ask "write me an image prompt for...".
+**B) The Claude app.** Open the Skills section in your Claude settings, download [`image-prompt-kit-skill.zip`](https://github.com/Ptlimited/image-prompt-kit/releases/latest/download/image-prompt-kit-skill.zip) and upload it there. Turn it on, then ask "write me an image prompt for...".
 
 **C) No install.** Open any chat. Paste `SKILL.md`, then the file for your tool from `references/` (`gemini.md` or `chatgpt.md`). Add your idea. It asks its 2 questions and writes the prompt.
 
@@ -44,32 +87,54 @@ Want only the styles? Skip the install. Open [`references/styles.md`](references
 Paste this:
 
 ```
-Write me an image prompt for a thank you card picture for my team after a big product launch. Nano Banana in AI Studio, from scratch.
+Write me an image prompt for a poster for my bakery's Saturday sourdough special. The words on it are "Saturday Sourdough" and "Fresh at 8am". Nano Banana in AI Studio, from scratch.
 ```
 
-What comes back (1 run in a fresh chat, no edits):
-
-```
-Create a warm, celebratory thank you card illustration for a team that just finished a big product launch. A cream letterpress card stands upright on a polished walnut desk, with a small brass confetti cannon, a few scattered gold foil confetti pieces and a ceramic mug of coffee beside it. Across the center of the card, the headline reads "Thank you, team" in a bold hand-lettered serif with a deep navy ink finish, and a single line beneath it in a smaller script reads "We launched it together". A tiny hand-drawn rocket in burnt orange ink rises from the corner of the card, leaving a curved trail of stars. Shot from slightly above at eye level to the card, with a 50mm lens at f/2.8, soft golden-hour window light from the left, and a shallow depth of field that keeps the lettering sharp and softly blurs the desk. The mood is proud, joyful and a little festive, with a palette of cream, navy, burnt orange and gold. Make it a vertical 4:5 image.
-```
+You get the Nano Banana prompt shown above, then:
 
 **Settings to pick**
 - Model: Nano Banana 2.1.
 - Output format: Images only.
 - Aspect ratio: 4:5.
-- Resolution: 2K (pick 4K if you will print it).
-- Thinking level: High, because there is text in the image.
+- Resolution: 2K (4K if you'll print it large).
+- Thinking level: High, since the poster has text.
 - Grounding with Google Search: off.
 
 **If it misses**
-- "The headline must read exactly "Thank you, team". Change only the headline. Keep everything else the same."
-- "Make the rocket larger. Keep the rest exactly the same."
+- Word misspelled: "The headline must read exactly "Saturday Sourdough". Change only the headline. Keep the rest exactly the same."
+- Looks too plastic or polished: "Use a 35mm lens at f/1.8, soft window light, natural crust texture. Keep the loaf, the text and the layout exactly the same."
 
-Paste the prompt into Nano Banana 2.1, pick the settings, and you have your first image.
+Paste the prompt into Nano Banana 2.1, pick the settings, and you've got your first image. If it asks things you already said, tell it "skip the questions, you have my answers".
 
-If it asks things you already said, tell it "skip the questions, you have my answers".
+## Ask for more
+
+- **"Give me 3 versions."** You get 3 prompts for your tool, each in its own direction. For a podcast cover it came back as "warm and soft", "bold and graphic" and "close up".
+- **"Write it for both tools."** You get the pair, plus 1 line on what differs. It works from a photo of you too.
+- **"I have no idea yet."** It shows you the 10 styles in the kit and you pick.
+- **Tell it where the image goes.** A feed post gets 4:5, a story or a reel cover gets 9:16, a video thumbnail or a slide gets 16:9, a profile photo gets 1:1.
+
+## What is inside a good prompt
+
+Take the Nano Banana prompt above. The skill builds each one from the same parts:
+
+| Part | In the bakery prompt |
+|---|---|
+| Subject | "a golden sourdough loaf with a deeply caramelized, crackling crust and a clean diagonal score" |
+| Material | "a rustic oak board dusted with flour", "a cream linen cloth" |
+| Place and light | "a soft focus bakery counter with warm morning sunlight coming through a window" |
+| Camera | "50mm lens at f/2.8, golden hour side light" |
+| Words in the image | The exact text in quotes, with the lettering style named: "a bold, rounded serif typeface in deep brown" |
+| Layout | "Leave a calm cream area at the top of the poster for the headline" |
+| Palette | "warm cream, golden brown and terracotta" |
+| Shape | "Make it a vertical 4:5 image." |
+
+You can write this yourself. The skill does it in 1 pass and checks the framing against the shape before it hands the prompt back.
 
 ## The 5 styles
+
+<p align="center">
+  <img src="assets/styles.gif" width="320" alt="1 photo turned into a 70s portrait, a felted doll, a bobblehead, a newspaper front page and a marble statue, one after another">
+</p>
 
 Attach 1 clear photo of yourself and paste a box from [`references/styles.md`](references/styles.md). These were tested on Nano Banana 2.1 with 1 starting photo. ChatGPT takes the same prompts.
 
@@ -101,11 +166,16 @@ The prompts are in [`references/styles.md`](references/styles.md) under "Test pr
 
 ## When the image misses
 
-[`references/fixes.md`](references/fixes.md) lists the common misses and the 1 line to send for each: the face drifted, a word is misspelled, it added text you did not ask for, the look is too plastic.
+[`references/fixes.md`](references/fixes.md) lists the common misses and the 1 line to send for each: the face drifted, a word is misspelled, it added text you didn't ask for, the look is too plastic.
 
 ## Make it yours
 
-Open `SKILL.md` and add a line about how you work. Your usual output shape ("9:16 for stories"), a look you like ("muted film colors") or a brand color. It follows what you add.
+Open `SKILL.md` and add a line about how you work. Or tell your AI once:
+
+- "Add my brand colors, deep navy and burnt orange, to the prompts you write for me."
+- "Default to ChatGPT, and give me 3 versions each time."
+- "Write for my product photos. Keep the product exactly the same and change only the setting."
+- "Use 9:16 unless I say otherwise."
 
 ## Update or remove
 
@@ -121,6 +191,8 @@ Open `SKILL.md` and add a line about how you work. Your usual output shape ("9:1
 
 **Is it tied to 1 model?** No. The skill asks which tool you use and writes for it. It covers Nano Banana 2.1 and ChatGPT Images today.
 
+**What if a lab changes its advice?** The guides in `references/` carry a "last checked" date and link to the source, so you can see what they rest on.
+
 ## What's in here
 
 | Path | What it is |
@@ -129,8 +201,9 @@ Open `SKILL.md` and add a line about how you work. Your usual output shape ("9:1
 | `references/gemini.md`, `references/chatgpt.md` | Each lab's advice, boiled down, with links to the source |
 | `references/styles.md` | The 10 prompts |
 | `references/fixes.md` | What to send when the image misses |
-| `references/test-results.md` | How the same-prompt test was run |
+| `references/test-results.md` | How the same prompt test was run |
 | `examples/` | The images the 10 prompts made |
+| `assets/` | The animation and pictures on this page |
 
 2 files do the work, `SKILL.md` and the guide for your tool. The rest is proof and extras.
 

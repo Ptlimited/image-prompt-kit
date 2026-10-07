@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460" width="900" height="460" role="img" aria-label="You type an idea, answer 2 quick questions, and get a prompt written for your tool with the settings to pick">
+<style>
+text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
+@keyframes q{0%,24.29%{opacity:0}27.86%,90.00%{opacity:1}93.57%,100%{opacity:0}}@keyframes c1{0%,40.00%{opacity:0}43.57%,90.00%{opacity:1}93.57%,100%{opacity:0}}@keyframes c2{0%,45.71%{opacity:0}49.29%,90.00%{opacity:1}93.57%,100%{opacity:0}}@keyframes s{0%,64.29%{opacity:0}67.86%,90.00%{opacity:1}93.57%,100%{opacity:0}}@keyframes m{0%,74.29%{opacity:0}77.86%,90.00%{opacity:1}93.57%,100%{opacity:0}}@keyframes cap1{0%,1.43%{opacity:0}5.00%,90.00%{opacity:1}93.57%,100%{opacity:0}}@keyframes type{0%,5.71%{width:0}20.00%,90.00%{width:560px}93.57%,100%{width:0}}
+.q{opacity:0;animation:q 14.0s infinite}
+.c1{opacity:0;animation:c1 14.0s infinite}
+.c2{opacity:0;animation:c2 14.0s infinite}
+.s{opacity:0;animation:s 14.0s infinite}
+.m{opacity:0;animation:m 14.0s infinite}
+.typer{animation:type 14.0s infinite;width:0}
+</style>
+<rect width="900" height="460" rx="18" fill="#faf7f2"/>
+<text x="40" y="52" font-size="15" font-weight="700" fill="#d65c20" letter-spacing="1.5">1  TELL IT YOUR IDEA</text>
+<rect x="40" y="66" width="820" height="54" rx="12" fill="#ffffff" stroke="#e4ddd2"/>
+<clipPath id="tc"><rect class="typer" x="60" y="72" height="42"/></clipPath>
+<text x="60" y="100" font-size="21" fill="#1c1c20" clip-path="url(#tc)">A poster for my bakery's Saturday sourdough special</text>
+<g class="q">
+<text x="40" y="162" font-size="15" font-weight="700" fill="#d65c20" letter-spacing="1.5">2  IT ASKS 2 QUICK QUESTIONS</text>
+<rect x="40" y="176" width="400" height="52" rx="12" fill="#ffffff" stroke="#e4ddd2"/>
+<text x="58" y="198" font-size="14" fill="#6a6a72">Which tool?</text>
+<text x="58" y="218" font-size="16" font-weight="600" fill="#1c1c20">A  Nano Banana</text><text x="250" y="218" font-size="16" font-weight="600" fill="#1c1c20">B  ChatGPT</text>
+<rect x="460" y="176" width="400" height="52" rx="12" fill="#ffffff" stroke="#e4ddd2"/>
+<text x="478" y="198" font-size="14" fill="#6a6a72">Starting point?</text>
+<text x="478" y="218" font-size="16" font-weight="600" fill="#1c1c20">A  From scratch</text><text x="650" y="218" font-size="16" font-weight="600" fill="#1c1c20">B  From my photo</text>
+</g>
+<g class="c1">
+<text x="40" y="262" font-size="15" font-weight="700" fill="#d65c20" letter-spacing="1.5">3  YOU GET THE PROMPT YOUR TOOL WANTS</text>
+<rect x="40" y="276" width="400" height="86" rx="12" fill="#ffffff" stroke="#4c7ef3" stroke-width="2"/>
+<text x="58" y="302" font-size="16" font-weight="700" fill="#2a5bd7">Nano Banana</text>
+<text x="58" y="326" font-size="15" fill="#1c1c20">Full sentences. Camera and light words.</text>
+<text x="58" y="348" font-size="15" fill="#1c1c20">Say what you want, in positive form.</text>
+</g>
+<g class="c2">
+<rect x="460" y="276" width="400" height="86" rx="12" fill="#ffffff" stroke="#1a9a6c" stroke-width="2"/>
+<text x="478" y="302" font-size="16" font-weight="700" fill="#0f7a53">ChatGPT Images</text>
+<text x="478" y="326" font-size="15" fill="#1c1c20">Result first, then labeled parts.</text>
+<text x="478" y="348" font-size="15" fill="#1c1c20">Spell out what to leave out.</text>
+</g>
+<g class="s">
+<text x="40" y="398" font-size="15" font-weight="700" fill="#d65c20" letter-spacing="1.5">4  PLUS</text>
+<text x="112" y="398" font-size="17" fill="#1c1c20">the settings to pick, like shape and thinking level</text>
+</g>
+<g class="m">
+<text x="112" y="426" font-size="17" fill="#1c1c20">and 2 lines to send if the image misses</text>
+</g>
+</svg>
